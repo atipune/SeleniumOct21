@@ -12,23 +12,27 @@ public static void main(String[] args) throws InterruptedException
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");  //fully qualified url
-		Thread.sleep(2000);
-		driver.navigate().to("https://www.amazon.com/");
-		Thread.sleep(2000);
-		String websitetitle = driver.getTitle();
-		System.out.println(websitetitle);
-		String websiteurl = driver.getCurrentUrl();
-		System.out.println(websiteurl);
-		driver.navigate().back();
-		Thread.sleep(2000);
-		driver.navigate().forward();
-		Thread.sleep(2000);
-		driver.navigate().to("https://www.facebook.com/");
-		Thread.sleep(2000);
-		driver.navigate().refresh();
-
-		Thread.sleep(2000);
-		driver.close();
+		
+		
+		
+		
+//		Thread.sleep(2000);
+//		driver.navigate().to("https://www.amazon.com/");
+//		Thread.sleep(2000);
+//		String websitetitle = driver.getTitle();
+//		System.out.println(websitetitle);
+//		String websiteurl = driver.getCurrentUrl();
+//		System.out.println(websiteurl);
+//		driver.navigate().back();
+//		Thread.sleep(2000);
+//		driver.navigate().forward();
+//		Thread.sleep(2000);
+//		driver.navigate().to("https://www.facebook.com/");
+//		Thread.sleep(2000);
+//		driver.navigate().refresh();
+//
+//		Thread.sleep(2000);
+//		driver.close();
 	//	driver.quit();
 	}
 }
