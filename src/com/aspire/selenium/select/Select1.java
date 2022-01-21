@@ -1,5 +1,8 @@
 package com.aspire.selenium.select;
 
+import java.util.List;
+import java.util.TreeSet;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,9 +18,9 @@ public static void main(String[] args) throws InterruptedException {
 			driver.get("https://www.facebook.com/");
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			
-			driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("Rutuja");
+			driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Rutuja");
 			driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys("Kulkarni");
 			driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys("9876543210");
 			driver.findElement(By.xpath("//input[@name='reg_passwd__']")).sendKeys("xyz@123");
@@ -28,6 +31,8 @@ public static void main(String[] args) throws InterruptedException {
 			
 			
 			Select s = new Select(daylist);
+			WebElement dayselected = s.getFirstSelectedOption();
+			System.out.println("Default selected day from day list box="+dayselected.getText());
 			s.selectByIndex(14);  //index 0 for 1st element in list
 			Thread.sleep(2000);
 //			s.deselectByIndex(index);
@@ -39,6 +44,7 @@ public static void main(String[] args) throws InterruptedException {
 //			s.deselectAll();
 			
 			
+			
 			WebElement Monthlist = driver.findElement(By.xpath("//select[@id='month']"));
 			Select s2 = new Select(Monthlist);
 //Oct--> July--> Dec
@@ -47,6 +53,23 @@ public static void main(String[] args) throws InterruptedException {
 			s2.selectByValue("7");
 			Thread.sleep(2000);
 			s2.selectByVisibleText("Dec");
+			
+			List<WebElement> allmonth = s2.getOptions();
+			System.out.println("Total count of options in month listbox="+allmonth.size());
+			for(WebElement monthname:allmonth)
+			{
+				System.out.println(monthname.getText());
+			}
+			System.out.println("List of month in Alphabetical order");
+			TreeSet tr = new TreeSet();
+			for(WebElement month:allmonth)
+			{
+				tr.add(month.getText());
+			}
+			for(Object monthfromtr:tr)
+			{
+				System.out.println(monthfromtr);
+			}
 }
 
 }
