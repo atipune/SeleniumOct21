@@ -28,8 +28,6 @@ public class Webtable1
 	{
 		System.out.println(ele.getText());
 	}
-//column
-//table=header row + body rows
 	
 }
 }
