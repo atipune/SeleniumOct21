@@ -11,7 +11,7 @@ public class Webtable1
 {
 	public static void main(String[] args) throws InterruptedException {
 		
-	
+//temperoray change
 	System.setProperty("webdriver.chrome.driver", "D:\\Java-projects\\Oct21\\SeleniumOct21\\SoftFiles\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
