@@ -1,4 +1,4 @@
-package com.aspire.selenium.parametrization;
+package com.aspire.framework.datadriven;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -28,7 +28,6 @@ public class ExcelToHTML
 	String flatno = wbf.getSheet("Sheet1").getRow(1).getCell(2).getStringCellValue();
 	driver.findElement(By.xpath("//input[@id='resAddress1']")).sendKeys(flatno);
 	
-	
-	
+
 	}
 }
