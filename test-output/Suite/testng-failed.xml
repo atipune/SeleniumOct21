@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Testng(failed)">
+    <classes>
+      <class name="com.aspire.framework.testNG.FailedXmlCreation">
+        <methods>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- com.aspire.framework.testNG.FailedXmlCreation -->
+      <class name="com.aspire.framework.testNG.SoftAssert2">
+        <methods>
+          <include name="Soft_Assert"/>
+          <include name="Hard_Assert"/>
+        </methods>
+      </class> <!-- com.aspire.framework.testNG.SoftAssert2 -->
+    </classes>
+  </test> <!-- Testng(failed) -->
+</suite> <!-- Failed suite [Suite] -->
