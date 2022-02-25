@@ -1,17 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
+    <line>
+      <![CDATA[2]]>
+    </line>
+    <line>
+      <![CDATA[3]]>
+    </line>
+    <line>
+      <![CDATA[4]]>
+    </line>
+    <line>
+      <![CDATA[5]]>
+    </line>
+    <line>
+      <![CDATA[6]]>
+    </line>
+    <line>
+      <![CDATA[7]]>
+    </line>
+    <line>
+      <![CDATA[8]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="263" started-at="2022-02-24T07:59:17 IST" finished-at="2022-02-24T07:59:17 IST">
+  <suite name="Suite" duration-ms="432" started-at="2022-02-25T07:59:34 IST" finished-at="2022-02-25T07:59:35 IST">
     <groups>
+      <group name="addtocart">
+        <method signature="Grouping.m5()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m5" class="com.aspire.framework.testNG.Grouping"/>
+      </group> <!-- addtocart -->
+      <group name="signin">
+        <method signature="Grouping.m3()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m3" class="com.aspire.framework.testNG.Grouping"/>
+        <method signature="Grouping.m8()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m8" class="com.aspire.framework.testNG.Grouping"/>
+      </group> <!-- signin -->
+      <group name="payment">
+        <method signature="Grouping.m2()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m2" class="com.aspire.framework.testNG.Grouping"/>
+      </group> <!-- payment -->
+      <group name="order">
+        <method signature="Grouping.m4()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m4" class="com.aspire.framework.testNG.Grouping"/>
+        <method signature="Grouping.m6()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m6" class="com.aspire.framework.testNG.Grouping"/>
+        <method signature="Grouping.m7()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m7" class="com.aspire.framework.testNG.Grouping"/>
+      </group> <!-- order -->
     </groups>
-    <test name="Default test" duration-ms="263" started-at="2022-02-24T07:59:17 IST" finished-at="2022-02-24T07:59:17 IST">
-      <class name="com.aspire.framework.testNG.SoftAssert2">
-        <test-method status="PASS" signature="Soft_Assert()[pri:0, instance:com.aspire.framework.testNG.SoftAssert2@3dfc5fb8]" name="Soft_Assert" duration-ms="76" started-at="2022-02-24T07:59:17 IST" finished-at="2022-02-24T07:59:17 IST">
+    <test name="Testng" duration-ms="432" started-at="2022-02-25T07:59:34 IST" finished-at="2022-02-25T07:59:35 IST">
+      <class name="com.aspire.framework.testNG.Grouping">
+        <test-method status="PASS" signature="m2()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m2" duration-ms="39" started-at="2022-02-25T07:59:35 IST" finished-at="2022-02-25T07:59:35 IST">
           <reporter-output>
+            <line>
+              <![CDATA[2]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- Soft_Assert -->
-      </class> <!-- com.aspire.framework.testNG.SoftAssert2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- m2 -->
+        <test-method status="PASS" signature="m3()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m3" duration-ms="7" started-at="2022-02-25T07:59:35 IST" finished-at="2022-02-25T07:59:35 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m3 -->
+        <test-method status="PASS" signature="m4()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m4" duration-ms="17" started-at="2022-02-25T07:59:35 IST" finished-at="2022-02-25T07:59:35 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m4 -->
+        <test-method status="PASS" signature="m5()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m5" duration-ms="29" started-at="2022-02-25T07:59:35 IST" finished-at="2022-02-25T07:59:35 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[5]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m5 -->
+        <test-method status="PASS" signature="m6()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m6" duration-ms="8" started-at="2022-02-25T07:59:35 IST" finished-at="2022-02-25T07:59:35 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[6]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m6 -->
+        <test-method status="PASS" signature="m7()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m7" duration-ms="3" started-at="2022-02-25T07:59:35 IST" finished-at="2022-02-25T07:59:35 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[7]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m7 -->
+        <test-method status="PASS" signature="m8()[pri:0, instance:com.aspire.framework.testNG.Grouping@307f6b8c]" name="m8" duration-ms="4" started-at="2022-02-25T07:59:35 IST" finished-at="2022-02-25T07:59:35 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m8 -->
+      </class> <!-- com.aspire.framework.testNG.Grouping -->
+    </test> <!-- Testng -->
+  </suite> <!-- Suite -->
 </testng-results>
