@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Testng(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test1(failed)" parallel="tests">
     <classes>
-      <class name="com.aspire.framework.testNG.FailedXmlCreation">
+      <class name="com.aspire.framework.parallelCompatible.Browser1">
         <methods>
-          <include name="m1"/>
+          <include name="FirefoxBroswer"/>
         </methods>
-      </class> <!-- com.aspire.framework.testNG.FailedXmlCreation -->
-      <class name="com.aspire.framework.testNG.SoftAssert2">
-        <methods>
-          <include name="Soft_Assert"/>
-          <include name="Hard_Assert"/>
-        </methods>
-      </class> <!-- com.aspire.framework.testNG.SoftAssert2 -->
+      </class> <!-- com.aspire.framework.parallelCompatible.Browser1 -->
     </classes>
-  </test> <!-- Testng(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

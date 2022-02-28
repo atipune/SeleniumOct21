@@ -9,16 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Testng</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">432</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">24,136</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">34,941</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">59,077</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testng &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.aspire.framework.testNG.Grouping</td><td><a href="#m0">m2</a></td><td rowspan="1">1645756175145</td><td rowspan="1">39</td></tr><tr class="passedeven"><td><a href="#m1">m3</a></td><td rowspan="1">1645756175223</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m2">m4</a></td><td rowspan="1">1645756175235</td><td rowspan="1">17</td></tr><tr class="passedeven"><td><a href="#m3">m5</a></td><td rowspan="1">1645756175281</td><td rowspan="1">29</td></tr><tr class="passedeven"><td><a href="#m4">m6</a></td><td rowspan="1">1645756175334</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m5">m7</a></td><td rowspan="1">1645756175345</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m6">m8</a></td><td rowspan="1">1645756175369</td><td rowspan="1">4</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.aspire.framework.parallelCompatible.Browser2</td><td><a href="#m0">chromeBroswer</a></td><td rowspan="1">1646013852893</td><td rowspan="1">23986</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.aspire.framework.parallelCompatible.Browser1</td><td><a href="#m1">FirefoxBroswer</a></td><td rowspan="1">1646013852886</td><td rowspan="1">34752</td></tr></tbody>
 </table>
-<h2>Testng</h2><h3 id="m0">com.aspire.framework.testNG.Grouping#m2</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">2</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.aspire.framework.testNG.Grouping#m3</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">3</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.aspire.framework.testNG.Grouping#m4</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">4</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.aspire.framework.testNG.Grouping#m5</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">5</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.aspire.framework.testNG.Grouping#m6</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">6</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.aspire.framework.testNG.Grouping#m7</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">7</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.aspire.framework.testNG.Grouping#m8</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">8</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test2</h2><h3 id="m0">com.aspire.framework.parallelCompatible.Browser2#chromeBroswer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m1">com.aspire.framework.parallelCompatible.Browser1#FirefoxBroswer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-69OQC4Q&apos;, ip: &apos;192.168.1.204&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:230)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:151)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:198)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:164)
+	at com.aspire.framework.parallelCompatible.Browser1.FirefoxBroswer(Browser1.java:14)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
