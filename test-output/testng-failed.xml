@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="Test1(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.aspire.framework.parallelCompatible.Browser1">
+      <class name="com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass">
         <methods>
-          <include name="FirefoxBroswer"/>
+          <include name="browserlaunch"/>
+          <include name="verificationOfLogo"/>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.aspire.framework.parallelCompatible.Browser1 -->
+      </class> <!-- com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

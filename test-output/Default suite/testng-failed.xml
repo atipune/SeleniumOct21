@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.aspire.framework.testNG.SoftAssert2">
+      <class name="com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass">
         <methods>
-          <include name="Soft_Assert"/>
-          <include name="Hard_Assert"/>
+          <include name="browserlaunch"/>
+          <include name="verificationOfLogo"/>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.aspire.framework.testNG.SoftAssert2 -->
+      </class> <!-- com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
