@@ -3,7 +3,9 @@ package com.aspire.framework.pomPagefactoryDatadrivenTestNG;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Row;
@@ -14,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class LoginTestClass 
@@ -24,14 +27,15 @@ public class LoginTestClass
 	PinPage pp;
 	HomePage hp;
 	
-	@SuppressWarnings("deprecation")
-	@BeforeClass
-	public void browserlaunch() throws EncryptedDocumentException, IOException 
+	
+	@BeforeTest
+	public void browserlaunch() throws EncryptedDocumentException, IOException, InterruptedException 
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\Java-projects\\Oct21\\SeleniumOct21\\SoftFiles\\chromedriver.exe");
 		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+												//either of (Duration.ofSeconds(20)) or (20, TimeUnit.SECONDS)
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		driver.get("https://kite.zerodha.com/");
 	
 		
@@ -43,7 +47,7 @@ public class LoginTestClass
 		hp = new HomePage(driver);
 	}
 	
-	@BeforeMethod
+	@BeforeClass
 	public void loginToApp() 
 	{
 		lp.enterUserName(wbf.getSheet("Sheet1").getRow(10).getCell(1).getStringCellValue());
