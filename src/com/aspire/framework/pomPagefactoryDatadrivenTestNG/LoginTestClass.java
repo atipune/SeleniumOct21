@@ -33,12 +33,11 @@ public class LoginTestClass
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\Java-projects\\Oct21\\SeleniumOct21\\SoftFiles\\chromedriver.exe");
 		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); //20000
 												//either of (Duration.ofSeconds(20)) or (20, TimeUnit.SECONDS)
 		driver.manage().window().maximize();
 		driver.get("https://kite.zerodha.com/");
 	
-		
 		String filepath="D:\\Java-projects\\Oct21\\SeleniumOct21\\TestData\\ProjectData.xlsx";
 		FileInputStream file = new FileInputStream(filepath);
 		wbf = WorkbookFactory.create(file);

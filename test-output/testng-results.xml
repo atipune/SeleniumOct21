@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42541" started-at="2022-03-02T20:49:51 IST" finished-at="2022-03-02T20:50:34 IST">
+  <suite name="Default suite" duration-ms="45693" started-at="2022-03-03T07:22:10 IST" finished-at="2022-03-03T07:22:56 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42541" started-at="2022-03-02T20:49:51 IST" finished-at="2022-03-02T20:50:34 IST">
+    <test name="Default test" duration-ms="45693" started-at="2022-03-03T07:22:10 IST" finished-at="2022-03-03T07:22:56 IST">
       <class name="com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass">
-        <test-method status="PASS" signature="browserlaunch()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="browserlaunch" is-config="true" duration-ms="33724" started-at="2022-03-02T20:49:51 IST" finished-at="2022-03-02T20:50:25 IST">
+        <test-method status="PASS" signature="browserlaunch()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="browserlaunch" is-config="true" duration-ms="37550" started-at="2022-03-03T07:22:10 IST" finished-at="2022-03-03T07:22:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="loginToApp" is-config="true" duration-ms="2132" started-at="2022-03-02T20:50:25 IST" finished-at="2022-03-02T20:50:27 IST">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="loginToApp" is-config="true" duration-ms="3092" started-at="2022-03-03T07:22:48 IST" finished-at="2022-03-03T07:22:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="verificationOfInitials()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="verificationOfInitials" duration-ms="5515" started-at="2022-03-02T20:50:27 IST" finished-at="2022-03-02T20:50:33 IST">
+        <test-method status="PASS" signature="verificationOfInitials()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="verificationOfInitials" duration-ms="3235" started-at="2022-03-03T07:22:51 IST" finished-at="2022-03-03T07:22:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificationOfInitials -->
-        <test-method status="PASS" signature="verificationOfLogo()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="verificationOfLogo" duration-ms="390" started-at="2022-03-02T20:50:33 IST" finished-at="2022-03-02T20:50:33 IST">
+        <test-method status="PASS" signature="verificationOfLogo()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="verificationOfLogo" duration-ms="650" started-at="2022-03-03T07:22:54 IST" finished-at="2022-03-03T07:22:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificationOfLogo -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="closeBrowser" is-config="true" duration-ms="600" started-at="2022-03-02T20:50:33 IST" finished-at="2022-03-02T20:50:34 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNG.LoginTestClass@262b2c86]" name="closeBrowser" is-config="true" duration-ms="681" started-at="2022-03-03T07:22:55 IST" finished-at="2022-03-03T07:22:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
