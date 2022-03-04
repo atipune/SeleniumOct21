@@ -30,17 +30,9 @@ public class HomePage
 	}
 
 //initial name verify
-	public void verifyInitialName(String ExpIname)
+	public String verifyInitialName()
 	{	
 		 String actIname = actInitialName.getText();
-		
-		if(actIname.equals(ExpIname))
-		{
-			System.out.println("Initial name verification Test case pass");
-		}
-		else
-		{
-			System.out.println("Initial name verification Test case fail");
-		}
+		 return actIname;
 	}
 }

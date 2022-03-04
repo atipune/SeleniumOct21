@@ -21,12 +21,12 @@ public class PinPage
 	{
 		pin.sendKeys(pinValue);
 	}
-			//driver.findElement(By.xpath("//input[@id='pin']")).sendKeys("976976");
+			
 
 //Continue button
 	public void clickcntbtn()
 	{
 		continuebtn.click();
 	}
-	//		driver.findElement(By.xpath("//button[@type='submit']")).click();
+
 }

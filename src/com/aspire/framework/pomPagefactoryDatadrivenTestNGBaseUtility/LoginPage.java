@@ -22,19 +22,15 @@ public class LoginPage
 	{
 		UN.sendKeys(username);
 	}
-	//	driver.findElement(By.xpath("//input[@id='userid']")).sendKeys("DP6852");
 
 //enter Pwd
 	public void enterPassword(String password)
 	{
 		pwd.sendKeys(password);
 	}
-	//		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Pramod@2105");
-	//enter button
 			
 	public void	clickloginButton()
 	{
 		loginbtn.click();	
-		//driver.findElement(By.xpath("//button[@type='submit']")).click();
 	}
 }

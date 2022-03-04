@@ -13,6 +13,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -25,6 +26,7 @@ public class LoginTestClass extends BaseClass
 	LoginPage lp;
 	PinPage pp;
 	HomePage hp;
+	int ssid;
 	
 	
 	@BeforeTest
@@ -49,16 +51,21 @@ public class LoginTestClass extends BaseClass
 		
 	}
 	
-//	@Test
-//	public void verificationOfLogo()
-//	{
-//		hp.verifylogo(wbf.getSheet("Sheet1").getRow(10).getCell(6).getBooleanCellValue());
-//		
-//	}
+	@Test
+	public void verificationOfLogo()
+	{
+		hp.verifylogo(Utility.testData2(10, 6));
+	}
 	@Test
 	public void verificationOfInitials() throws EncryptedDocumentException, IOException
 	{
-		hp.verifyInitialName(Utility.testData(10,4));
+		ssid=10;
+		String ExpIname = Utility.testData(10,4);
+		String actIname=hp.verifyInitialName();
+		
+		Assert.assertEquals(ExpIname, actIname, "Initial name verification Test case fail due to different actual and initial names");	
+		
+		Utility.screenshots(driver,ssid);
 	}	
 	
 	@AfterClass
