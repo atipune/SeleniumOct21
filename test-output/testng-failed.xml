@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtility.LoginTestClass">
+      <class name="com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="verificationOfInitials"/>
           <include name="browserlaunch"/>
+          <include name="closeBrowser"/>
           <include name="loginToApp"/>
           <include name="verificationOfLogo"/>
+          <include name="logoutFromApp"/>
         </methods>
-      </class> <!-- com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtility.LoginTestClass -->
+      </class> <!-- com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
