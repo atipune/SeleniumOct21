@@ -1,4 +1,4 @@
-package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty;
+package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -16,7 +16,7 @@ public class BaseClass
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); //20000
 												//either of (Duration.ofSeconds(20)) or (20, TimeUnit.SECONDS)
 		driver.manage().window().maximize();
-		driver.get(Utility.getPropertyFiledata("url"));
+		driver.get(Utility.getPropertydata("url"));
 		Thread.sleep(2000);
 		
 		//cookies clear code

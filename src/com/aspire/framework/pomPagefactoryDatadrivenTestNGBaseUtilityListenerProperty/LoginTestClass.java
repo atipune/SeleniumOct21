@@ -1,4 +1,4 @@
-package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty;
+package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -28,7 +28,8 @@ public class LoginTestClass extends BaseClass
 	LoginPage lp;
 	PinPage pp;
 	HomePage hp;
-	KiteProfilePage profile;
+	DropDownMenu dd;
+	
 	
 	
 	@BeforeTest
@@ -39,47 +40,48 @@ public class LoginTestClass extends BaseClass
 		lp= new LoginPage(driver);
 		pp = new PinPage(driver);
 		hp = new HomePage(driver);
-		profile= new KiteProfilePage(driver);
+		dd= new DropDownMenu(driver);
 	}
 	
 	@BeforeClass
-	public void loginToApp() throws EncryptedDocumentException, IOException
+	public void loginToApp() throws EncryptedDocumentException, IOException 
 	{
-		
 		lp.enterUserName(Utility.testData(10,1));
 		lp.enterPassword(Utility.testData(10,2));
 		lp.clickloginButton();
 		
 		pp.enterpin(Utility.testData(10,3));
 		pp.clickcntbtn();
-		
 	}
 	
-//	@Test
-//	public void verificationOfLogo() throws IOException
-//	{
-//		boolean exp=Utility.testData2(10, 6);
-//		boolean act = hp.verifylogo();
-//		Assert.assertEquals(exp, act, "Logo verification Test case fail due to logo image not loading");	
-//		Utility.screenshots(driver);
-//	}
+	@Test
+	public void verificationOfLogo()
+	{
+		boolean exp=Utility.testData2(10, 6);
+		boolean act = hp.verifylogo();
+		Assert.assertEquals(exp, act, "Logo verification Test case fail due to logo image not loading");	
+	}
 	@Test
 	public void verificationOfInitials() throws EncryptedDocumentException, IOException
 	{
+		
 		String ExpIname = Utility.testData(10,4);
 		String actIname=hp.verifyInitialName();
 		Assert.assertEquals(ExpIname, actIname, "Initial name verification Test case fail due to different actual and initial names");	
-	}
-	@AfterMethod				//Listner
-	public void logoutFromApp(ITestResult result) throws IOException
+	//	Utility.screenshots(driver);
+	}	
+	@AfterMethod
+	public void profilenavigation(ITestResult result) throws IOException 
 	{
-		if(result.getStatus()==ITestResult.SUCCESS) {
+		if(result.getStatus()==ITestResult.SUCCESS)
+		{
 			Utility.screenshots(driver);
 		}
 		
-		hp.clickKiteHomePagePN();
-		profile.clickKiteProfilePageLogoutBtn();
+		hp.navigatetoProfile();
+		dd.clickOnProfile();
 	}
+	
 	@AfterClass
 	public void closeBrowser() 
 	{

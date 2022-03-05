@@ -1,118 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43622" started-at="2022-03-04T21:04:07 IST" finished-at="2022-03-04T21:04:51 IST">
+  <suite name="Default suite" duration-ms="39622" started-at="2022-03-05T08:11:44 IST" finished-at="2022-03-05T08:12:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43622" started-at="2022-03-04T21:04:07 IST" finished-at="2022-03-04T21:04:51 IST">
-      <class name="com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass">
-        <test-method status="PASS" signature="browserlaunch()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass@5ed828d]" name="browserlaunch" is-config="true" duration-ms="14383" started-at="2022-03-04T21:04:07 IST" finished-at="2022-03-04T21:04:22 IST">
+    <test name="Default test" duration-ms="39622" started-at="2022-03-05T08:11:44 IST" finished-at="2022-03-05T08:12:24 IST">
+      <class name="com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass">
+        <test-method status="PASS" signature="browserlaunch()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d]" name="browserlaunch" is-config="true" duration-ms="24750" started-at="2022-03-05T08:11:44 IST" finished-at="2022-03-05T08:12:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass@5ed828d]" name="loginToApp" is-config="true" duration-ms="5464" started-at="2022-03-04T21:04:22 IST" finished-at="2022-03-04T21:04:27 IST">
+        <test-method status="PASS" signature="loginToApp()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d]" name="loginToApp" is-config="true" duration-ms="7645" started-at="2022-03-05T08:12:09 IST" finished-at="2022-03-05T08:12:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method status="PASS" signature="verificationOfInitials()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass@5ed828d]" name="verificationOfInitials" duration-ms="3207" started-at="2022-03-04T21:04:27 IST" finished-at="2022-03-04T21:04:31 IST">
+        <test-method status="PASS" signature="verificationOfInitials()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d]" name="verificationOfInitials" duration-ms="4141" started-at="2022-03-05T08:12:17 IST" finished-at="2022-03-05T08:12:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificationOfInitials -->
-        <test-method status="FAIL" signature="logoutFromApp(org.testng.ITestResult)[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass@5ed828d]" name="logoutFromApp" is-config="true" duration-ms="20408" started-at="2022-03-04T21:04:31 IST" finished-at="2022-03-04T21:04:51 IST">
+        <test-method status="PASS" signature="profilenavigation(org.testng.ITestResult)[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d]" name="profilenavigation" is-config="true" duration-ms="974" started-at="2022-03-05T08:12:21 IST" finished-at="2022-03-05T08:12:22 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verificationOfInitials status=SUCCESS method=LoginTestClass.verificationOfInitials()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass@5ed828d] output={null}]]]>
+                <![CDATA[[TestResult name=verificationOfInitials status=SUCCESS method=LoginTestClass.verificationOfInitials()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Logout   ']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-69OQC4Q', ip: '192.168.1.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [083595762117c0a811e7e15cf3fad9e8, findElement {using=xpath, value=//a[text()=' Logout   ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ICE\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52447/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 083595762117c0a811e7e15cf3fad9e8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Logout   ']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-69OQC4Q', ip: '192.168.1.204', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [083595762117c0a811e7e15cf3fad9e8, findElement {using=xpath, value=//a[text()=' Logout   ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ICE\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52447}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52447/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 083595762117c0a811e7e15cf3fad9e8
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.KiteProfilePage.clickKiteProfilePageLogoutBtn(KiteProfilePage.java:21)
-at com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass.logoutFromApp(LoginTestClass.java:81)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutFromApp -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass@5ed828d]" name="closeBrowser" is-config="true" duration-ms="-1646408091514" started-at="2022-03-04T21:04:51 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- profilenavigation -->
+        <test-method status="PASS" signature="verificationOfLogo()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d]" name="verificationOfLogo" duration-ms="311" started-at="2022-03-05T08:12:22 IST" finished-at="2022-03-05T08:12:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verificationOfLogo -->
+        <test-method status="PASS" signature="profilenavigation(org.testng.ITestResult)[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d]" name="profilenavigation" is-config="true" duration-ms="760" started-at="2022-03-05T08:12:22 IST" finished-at="2022-03-05T08:12:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verificationOfLogo status=SUCCESS method=LoginTestClass.verificationOfLogo()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profilenavigation -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass@5ed828d]" name="closeBrowser" is-config="true" duration-ms="780" started-at="2022-03-05T08:12:23 IST" finished-at="2022-03-05T08:12:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty.LoginTestClass -->
+      </class> <!-- com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty.LoginTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

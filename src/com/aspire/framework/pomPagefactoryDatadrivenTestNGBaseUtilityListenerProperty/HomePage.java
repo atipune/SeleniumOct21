@@ -1,4 +1,4 @@
-package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty;
+package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +28,8 @@ public class HomePage
 		 String actIname = actInitialName.getText();
 		 return actIname;
 	}
-	public void clickKiteHomePagePN() {
+	public void navigatetoProfile()
+	{
 		actInitialName.click();
 	}
 }

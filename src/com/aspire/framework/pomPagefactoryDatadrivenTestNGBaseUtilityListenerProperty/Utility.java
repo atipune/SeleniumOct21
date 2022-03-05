@@ -1,4 +1,4 @@
-package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty;
+package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,9 +19,6 @@ public class Utility
 	static Workbook wbf;
 	static String filepath;
 	static FileInputStream file;
-	static Date d = new Date();
-	static String ssid = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
-	
 	public static String testData(int rowIndex,int cellIndex) throws EncryptedDocumentException, IOException	//parametrization
 	{
 		filepath="D:\\Java-projects\\Oct21\\SeleniumOct21\\TestData\\ProjectData.xlsx";
@@ -38,18 +35,19 @@ public class Utility
 	
 	public static void screenshots(WebDriver driver) throws IOException
 	{
+		Date d = new Date();
+		String timestamp = d.toString().replace(":", "_").replace(" ", "_");
 		
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest = new File("D:\\Java-projects\\Oct21\\SeleniumOct21\\Screenshots\\"+ssid+".jpg");
+		File dest = new File("D:\\Java-projects\\Oct21\\SeleniumOct21\\Screenshots\\"+timestamp+".jpg");
 		FileHandler.copy(src, dest);
 	}
-	//Property File
-		public static String getPropertyFiledata(String key) throws IOException {
-			Properties obj = new Properties(); 
-			FileInputStream objfile = new FileInputStream(System.getProperty("user.dir")+"\\abc.properties");
-			obj.load(objfile);
-			String value= obj.getProperty(key);
-			
-			return value;
-		}
+	public static String getPropertydata(String key) throws IOException
+	{
+		Properties PropObj = new Properties();
+		FileInputStream fileObj = new FileInputStream(System.getProperty("user.dir")+"\\prop.properties");
+		PropObj.load(fileObj);
+		String value=PropObj.getProperty(key);
+		return value;
+	}
 }

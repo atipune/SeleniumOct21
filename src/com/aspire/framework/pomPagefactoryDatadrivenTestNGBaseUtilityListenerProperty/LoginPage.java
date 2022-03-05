@@ -1,4 +1,4 @@
-package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListnerProperty;
+package com.aspire.framework.pomPagefactoryDatadrivenTestNGBaseUtilityListenerProperty;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
